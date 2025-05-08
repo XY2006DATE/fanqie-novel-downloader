@@ -1,6 +1,12 @@
 """
-番茄小说下载器
-Copyright (C) 2024 fanqie-novel-downloader
+番茄小说下载器 Flask 版本
+基于 Tomato-Novel-Downloader-Lite 项目修改
+
+原始项目版权信息：
+Copyright (C) 2024 Dlmily (Tomato-Novel-Downloader-Lite)
+
+修改版本版权信息：
+Copyright (C) 2025 XY2006DATE (fanqie-novel-downloader)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,6 +20,18 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+修改说明：
+- 将原始命令行工具转换为 Flask Web 应用
+- 添加了异步下载功能
+- 添加了进度跟踪和任务管理
+- 添加了文件管理和清理功能
+- 添加了日志系统
+- 优化了错误处理
+- 添加了 Web 界面
+
+修改日期：2025-05-08
+修改作者：XY2006DATE
 """
 
 from flask import Flask, render_template, request, jsonify, send_file
